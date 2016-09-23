@@ -1,0 +1,17 @@
+﻿<Window x:Class="MyMinimalMVVM.View.ConvertWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ViewModel="clr-namespace:MyMinimalMVVM.ViewModel"
+        xmlns:View="clr-namespace:MyMinimalMVVM.View"
+        Title="Converter"
+        MinWidth="300"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight">
+
+    <Window.DataContext>
+        <ViewModel:TextConvertViewModel/>
+    </Window.DataContext>
+
+    <View:TextConvertView/>
+
+</Window>
